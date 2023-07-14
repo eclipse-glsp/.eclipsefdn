@@ -47,6 +47,11 @@ orgs.newOrg('eclipse-glsp') {
           value: "********",
         },
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-client') {
       allow_merge_commit: false,
@@ -70,6 +75,11 @@ orgs.newOrg('eclipse-glsp') {
         "web-based"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-eclipse-integration') {
       allow_merge_commit: false,
@@ -89,6 +99,11 @@ orgs.newOrg('eclipse-glsp') {
         "java"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-examples') {
       allow_merge_commit: false,
@@ -111,6 +126,11 @@ orgs.newOrg('eclipse-glsp') {
         "theia-extension"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -140,6 +160,11 @@ orgs.newOrg('eclipse-glsp') {
           value: "********",
         },
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-server') {
       allow_merge_commit: false,
@@ -164,6 +189,11 @@ orgs.newOrg('eclipse-glsp') {
         "modeling-tools"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-server-node') {
       allow_update_branch: false,
@@ -184,6 +214,11 @@ orgs.newOrg('eclipse-glsp') {
         "typescript"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 0,
+        },
+      ],
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -214,6 +249,11 @@ orgs.newOrg('eclipse-glsp') {
         "theia-language-extension"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-vscode-integration') {
       allow_merge_commit: false,
@@ -235,6 +275,11 @@ orgs.newOrg('eclipse-glsp') {
         "vscode-extension"
       ],
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-website') {
       allow_update_branch: false,
@@ -243,6 +288,11 @@ orgs.newOrg('eclipse-glsp') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
+        },
+      ],
     },
     orgs.newRepo('glsp-website-source') {
       allow_update_branch: false,
@@ -256,6 +306,11 @@ orgs.newOrg('eclipse-glsp') {
       secrets: [
         orgs.newRepoSecret('GH_ACTION_TOKEN') {
           value: "********",
+        },
+      ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('master') {
+          required_approving_review_count: 0,
         },
       ],
     },
