@@ -1,0 +1,20 @@
+site_name: Otterdog configuration @ eclipse-glsp
+site_description: Otterdog configuration @ eclipse-glsp
+strict: true
+
+site_url: https://eclipse-glsp.github.io/.eclipsefdn/
+
+docs_dir: ./docs
+site_dir: ./_site
+
+theme:
+  name: 'material'
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins: []
+nav: []
+watch: []
