@@ -8,8 +8,6 @@ orgs.newOrg('eclipse-glsp') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
     members_can_change_project_visibility: false,
-    members_can_change_repo_visibility: true,
-    members_can_delete_repositories: true,
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
@@ -24,7 +22,7 @@ orgs.newOrg('eclipse-glsp') {
       description: "Graphical language server platform for building web-based diagram editors",
       has_discussions: true,
       has_wiki: false,
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -60,7 +58,7 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_security_updates_enabled: true,
       description: "Web-based client framework of the graphical language server platform",
       has_wiki: false,
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -88,7 +86,7 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_alerts_enabled: false,
       description: "Integration of the web-based GLSP client with Eclipse",
       has_wiki: false,
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -114,7 +112,7 @@ orgs.newOrg('eclipse-glsp') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "pages-test",
       gh_pages_source_path: "/docs",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -147,7 +145,7 @@ orgs.newOrg('eclipse-glsp') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "End-to-end testing library for Eclipse GLSP diagrams",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -176,7 +174,7 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_security_updates_enabled: true,
       description: "Java-based server framework of the graphical language server platform",
       has_wiki: false,
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -205,7 +203,7 @@ orgs.newOrg('eclipse-glsp') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -240,7 +238,7 @@ orgs.newOrg('eclipse-glsp') {
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Integration of the web-based GLSP client with Eclipse Theia",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -267,7 +265,7 @@ orgs.newOrg('eclipse-glsp') {
       default_branch: "master",
       dependabot_alerts_enabled: false,
       description: "Integration of the web-based GLSP client with VSCode",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
@@ -305,7 +303,7 @@ orgs.newOrg('eclipse-glsp') {
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "The website for GLSP",
-      homepage: "https://www.eclipse.org/glsp",
+      homepage: "https://www.eclipse.dev/glsp",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
