@@ -25,8 +25,6 @@ orgs.newOrg('eclipse-glsp') {
       has_discussions: true,
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editors",
@@ -61,8 +59,6 @@ orgs.newOrg('eclipse-glsp') {
       description: "Web-based client framework of the graphical language server platform",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editor",
@@ -89,8 +85,6 @@ orgs.newOrg('eclipse-glsp') {
       description: "Integration of the web-based GLSP client with Eclipse",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram-editors",
         "diagramming",
@@ -115,8 +109,6 @@ orgs.newOrg('eclipse-glsp') {
       gh_pages_source_branch: "pages-test",
       gh_pages_source_path: "/docs",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editors",
@@ -148,8 +140,6 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_alerts_enabled: false,
       description: "End-to-end testing library for Eclipse GLSP diagrams",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram-editor",
         "diagramming",
@@ -177,8 +167,6 @@ orgs.newOrg('eclipse-glsp') {
       description: "Java-based server framework of the graphical language server platform",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editor",
@@ -206,8 +194,6 @@ orgs.newOrg('eclipse-glsp') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editor",
@@ -241,8 +227,6 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_security_updates_enabled: true,
       description: "Integration of the web-based GLSP client with Eclipse Theia",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram",
         "diagram-editor",
@@ -268,8 +252,6 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_alerts_enabled: false,
       description: "Integration of the web-based GLSP client with VSCode",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "diagram-editors",
         "diagramming",
@@ -291,8 +273,6 @@ orgs.newOrg('eclipse-glsp') {
       allow_update_branch: false,
       default_branch: "master",
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -306,8 +286,6 @@ orgs.newOrg('eclipse-glsp') {
       dependabot_security_updates_enabled: true,
       description: "The website for GLSP",
       homepage: "https://www.eclipse.dev/glsp",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       secrets: [
         orgs.newRepoSecret('GH_ACTION_TOKEN') {
