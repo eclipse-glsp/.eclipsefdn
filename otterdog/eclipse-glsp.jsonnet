@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-glsp') {
   settings+: {
-    default_repository_permission: "none",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
@@ -40,6 +39,9 @@ orgs.newOrg('eclipse-glsp') {
         "vscode"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('AUTHTOKEN') {
           value: "********",
@@ -71,6 +73,9 @@ orgs.newOrg('eclipse-glsp') {
         "web-based"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -93,6 +98,9 @@ orgs.newOrg('eclipse-glsp') {
         "java"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -121,6 +129,9 @@ orgs.newOrg('eclipse-glsp') {
         "theia-extension"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -150,6 +161,9 @@ orgs.newOrg('eclipse-glsp') {
         "playwright"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('TOKEN') {
           value: "********",
@@ -182,6 +196,9 @@ orgs.newOrg('eclipse-glsp') {
         "modeling-tools"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -210,6 +227,9 @@ orgs.newOrg('eclipse-glsp') {
         "typescript"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 0,
@@ -243,6 +263,9 @@ orgs.newOrg('eclipse-glsp') {
         "theia-language-extension"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -267,6 +290,9 @@ orgs.newOrg('eclipse-glsp') {
         "vscode-extension"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -280,6 +306,9 @@ orgs.newOrg('eclipse-glsp') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -295,6 +324,9 @@ orgs.newOrg('eclipse-glsp') {
       description: "The website for GLSP",
       homepage: "https://www.eclipse.dev/glsp",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('GH_ACTION_TOKEN') {
           value: "********",
