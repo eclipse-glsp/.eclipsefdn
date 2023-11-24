@@ -206,7 +206,6 @@ orgs.newOrg('eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-server-node') {
-      allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
