@@ -2,4 +2,4 @@
 *             @eclipse-glsp/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-glsp/eclipsefdn-security @eclipse-glsp/eclipsefdn-releng
+/otterdog/**  @eclipse-glsp/eclipsefdn-security
