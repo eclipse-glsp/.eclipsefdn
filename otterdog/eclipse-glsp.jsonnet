@@ -10,6 +10,11 @@ orgs.newOrg('eclipse-glsp') {
       default_workflow_permissions: "write",
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('NPMJS_TOKEN') {
+      value: "pass:bots/ecd.glsp/npmjs.com/token",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('glsp') {
       allow_update_branch: false,
