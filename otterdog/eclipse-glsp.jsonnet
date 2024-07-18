@@ -167,7 +167,7 @@ orgs.newOrg('eclipse-glsp') {
         },
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 0,
         },
       ],
