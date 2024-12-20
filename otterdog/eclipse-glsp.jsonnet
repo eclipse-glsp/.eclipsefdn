@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-glsp') {
+orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
   settings+: {
     web_commit_signoff_required: false,
     workflows+: {
