@@ -74,6 +74,37 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
         },
       ],
     },
+    orgs.newRepo('glsp-core') {
+      allow_update_branch: false,
+      delete_branch_on_merge: true,
+      dependabot_security_updates_enabled: true,
+      description: "Core framework (web-based client and TypeScript/Node server) of the graphical language server platform",
+      has_wiki: false,
+      homepage: "https://www.eclipse.dev/glsp",
+      topics+: [
+        "diagram",
+        "diagram-editor",
+        "diagramming",
+        "glsp",
+        "graphical-modeling",
+        "graphical-models",
+        "lsp",
+        "lsp-server",
+        "node",
+        "sprotty",
+        "typescript",
+        "web-based"
+      ],
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 0,
+        },
+      ],
+    },
     orgs.newRepo('glsp-eclipse-integration') {
       allow_update_branch: false,
       default_branch: "master",
