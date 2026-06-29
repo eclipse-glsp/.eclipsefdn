@@ -198,6 +198,31 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
         },
       ],
     },
+    orgs.newRepo('glsp-previews') {
+      allow_update_branch: false,
+      default_branch: "previews",
+      delete_branch_on_merge: true,
+      dependabot_alerts_enabled: false,
+      description: "Hosting of GLSP example, PR, and website previews",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "previews",
+      gh_pages_source_path: "/",
+      has_issues: false,
+      has_projects: false,
+      has_wiki: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "previews"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
+    },
     orgs.newRepo('glsp-server') {
       allow_update_branch: false,
       default_branch: "master",
