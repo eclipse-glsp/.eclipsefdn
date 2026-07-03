@@ -102,6 +102,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 0,
+          requires_pull_request: false,
         },
       ],
     },
