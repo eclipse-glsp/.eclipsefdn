@@ -30,6 +30,12 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newOrgSecret('GPG_PRIVATE_KEY') {
       value: "pass:bots/ecd.glsp/gpg/secret-subkeys.asc",
     },
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/ecd.glsp/central.sonatype.org/token-password",
+    },
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/ecd.glsp/central.sonatype.org/token-username",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
@@ -123,9 +129,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       allow_update_branch: false,
       dependabot_security_updates_enabled: true,
       description: "Core framework (web-based client and TypeScript/Node server) of the graphical language server platform",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
       topics+: [
