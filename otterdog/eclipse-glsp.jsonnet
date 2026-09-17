@@ -152,6 +152,8 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
           ],
           deployment_branch_policy: "selected",
         },
+        orgs.newEnvironment('main') {
+        },
       ],
     },
     orgs.newRepo('glsp-eclipse-integration') {
