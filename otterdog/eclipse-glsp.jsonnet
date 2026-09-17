@@ -82,6 +82,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     },
     orgs.newRepo('glsp-client') {
       allow_update_branch: false,
+      archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Web-based client framework of the graphical language server platform",
@@ -161,6 +162,8 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
           ],
           deployment_branch_policy: "selected",
         },
+        orgs.newEnvironment('main') {
+        },
       ],
     },
     orgs.newRepo('glsp-eclipse-integration') {
@@ -227,6 +230,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     },
     orgs.newRepo('glsp-playwright') {
       allow_update_branch: false,
+      archived: true,
       dependabot_alerts_enabled: false,
       description: "End-to-end testing library for Eclipse GLSP diagrams",
       homepage: "https://www.eclipse.dev/glsp",
@@ -311,6 +315,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     },
     orgs.newRepo('glsp-server-node') {
       allow_update_branch: false,
+      archived: true,
       dependabot_alerts_enabled: false,
       description: "Node-based server framework of the graphical language server platform",
       homepage: "https://www.eclipse.dev/glsp",
