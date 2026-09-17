@@ -85,9 +85,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Web-based client framework of the graphical language server platform",
-      gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "gh-pages",
-      gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
       topics+: [
@@ -112,12 +109,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
       environments: [
         orgs.newEnvironment('copilot') {
-        },
-        orgs.newEnvironment('github-pages') {
-          branch_policies+: [
-            "gh-pages"
-          ],
-          deployment_branch_policy: "selected",
         },
         orgs.newEnvironment('main') {
         },
@@ -336,12 +327,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
       environments: [
         orgs.newEnvironment('copilot') {
-        },
-        orgs.newEnvironment('github-pages') {
-          branch_policies+: [
-            "gh-pages"
-          ],
-          deployment_branch_policy: "selected",
         },
       ],
     },
